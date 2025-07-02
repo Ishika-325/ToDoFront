@@ -254,8 +254,7 @@ export default function App() {
         <Route path="/signup" element={<Signup />} />
         <Route
           path="/"
-          element={<Mainapp />}
-          // element={token ? <Mainapp /> : <Navigate to="/login" replace />}
+         element={token ? <Mainapp /> : <Navigate to="/login" replace />}
         />
       </Routes>
     </Router>
